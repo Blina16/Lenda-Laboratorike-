@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../db');
 
 // List all grades
+//CRUD
 router.get('/', async (req, res) => {
   try {
     const sql = `
