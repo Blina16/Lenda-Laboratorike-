@@ -1,17 +1,1 @@
-﻿# OS and editor
-Thumbs.db
-Desktop.ini
-*.log
-.vscode/
-.idea/
-
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-
-# Node
-node_modules/
-
-# Others
-.DS_Store
+﻿
