@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../db');
 
 // Get all bookings for a student
+//CRUD
 router.get('/student/:studentId', async (req, res) => {
   const { studentId } = req.params;
   try {

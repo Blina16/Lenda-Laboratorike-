@@ -2,9 +2,9 @@ const express = require('express');
 const crypto = require('crypto');
 const router = express.Router();
 
-// Simple HMAC-signed token (JWT-like but handcrafted to avoid extra deps)
-// token format: base64url(header).base64url(payload).base64url(signature)
-// where signature = HMACSHA256(header.payload, SECRET)
+// Simple HMAC-
+// token format
+// where signature 
 const SECRET = process.env.AUTH_SECRET || 'dev_secret_change_me';
 
 function base64url(input) {
