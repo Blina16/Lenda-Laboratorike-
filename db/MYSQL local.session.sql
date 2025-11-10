@@ -13,3 +13,14 @@ CREATE TABLE IF NOT EXISTS courses (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     UNIQUE KEY unique_course_name (name)
 );
+
+-- Junction table to link tutors with courses (many-to-many relationship)
+CREATE TABLE IF NOT EXISTS tutor_courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tutor_id INT NOT NULL,
+    course_id INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (tutor_id) REFERENCES tutors(id) ON DELETE CASCADE,
+    FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE,
+    UNIQUE KEY unique_tutor_course (tutor_id, course_id)
+);
