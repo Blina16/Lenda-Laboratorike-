@@ -1,0 +1,22 @@
+﻿{
+    "name":  "backend",
+    "version":  "1.0.0",
+    "description":  "",
+    "main":  "routes.js",
+    "scripts":  {
+                    "test":  "echo \"Error: no test specified\" \u0026\u0026 exit 1",
+                    "start":  "node server.js"
+                },
+    "keywords":  [
+
+                 ],
+    "author":  "",
+    "license":  "ISC",
+    "type":  "commonjs",
+    "dependencies":  {
+                         "express":  "^5.1.0"
+                     },
+    "devDependencies":  {
+                            "nodemon":  "^3.1.10"
+                        }
+}
