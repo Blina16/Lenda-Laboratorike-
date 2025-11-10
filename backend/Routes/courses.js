@@ -3,6 +3,7 @@ const router = express.Router();
 const db = require('../db');
 
 // Get all courses
+//CRUD
 router.get('/', async (req, res) => {
   try {
     const sql = 'SELECT id, name, description, category, created_at, updated_at FROM courses ORDER BY name ASC';
