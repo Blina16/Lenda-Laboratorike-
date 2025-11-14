@@ -1,5 +1,5 @@
-// Compatibility shim: re-export from services/bookings
-export {
+// Service layer: wraps API calls and centralizes cross-cutting concerns later (caching, retries, etc.)
+export { 
   getStudentBookings,
   getTutorBookings,
   checkAvailability,
@@ -7,5 +7,4 @@ export {
   updateBookingStatus,
   deleteBooking,
   generateGoogleCalendarUrl,
-} from '../services/bookings';
-
+} from './bookings';
